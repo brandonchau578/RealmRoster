@@ -1,0 +1,39 @@
+.sideBarContainer {
+    width: 250px;
+    height: 100vh;
+    background-color: #e68057; /* Dark background color for sidebar */
+    color: #fff;
+    padding-top: 20px;
+    position: fixed; /* Keeps sidebar fixed on the side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sideBarContainer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sideBarOptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .sideBarOptions a {
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .sideBarOptions a:hover {
+    background-color: #575757; /* Hover effect color */
+    cursor: pointer;
+  }
+  
+  .sideBarOptions a:not(:last-child) {
+    border-bottom: 1px solid #444; /* Adds divider between links */
+  }
