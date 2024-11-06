@@ -1,57 +1,43 @@
-.GuildListContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
-}
-
-.GuildListContent {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    background-color: #AD7A32;
-    border-radius: 10px;
-    opacity: 0.8;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+.GuildMemberListContainer {
     padding: 20px;
-}
-
-.GuildMemberCard {
-    width: 300px;
-    height: 150px;
-    background-color: #8A6e29;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.GuildMemberLink {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-}
-
-.DeleteButton {
-    width: 100px;
-    height: 30px;
     background-color: #AD7A32;
+    width: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
-    border: none;
-    color: white;
-    font-size: 14px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-}
+    align-items: center;
+    flex-direction: column;
+    border-radius:10px;
+    color:white
+  }
+  
+  .GuildMembersGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensure 2 columns per row */
+    gap: 20px;
+    width: 70%;
+    padding:30px;
+  }
+  
+  .GuildMemberCard {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor:pointer
+  }
+  
+  .GuildMemberCard h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .GuildMemberCard p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .GuildMemberCard strong {
+    font-weight: bold;
+  }
