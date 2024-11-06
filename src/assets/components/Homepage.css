@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+.HomePageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    width: 500px; /* You can adjust this width if needed */
+    height: 500px; /* Adjust height as necessary */
+    font-size:24px;
+    text-align: center;
+}

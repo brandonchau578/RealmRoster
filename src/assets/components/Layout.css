@@ -1,0 +1,38 @@
+body, #root {
+    background-color: #895129;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.layoutContainer {
+    display: flex; /* Use flex to align sidebar and content */
+    height: 90vh; /* Full viewport height */
+    width:100%;
+    max-width: 1200px;
+}
+
+.contentContainer {
+    display: flex; /* Add flexbox for alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: calc(95% - 250px); /* Full width minus sidebar */
+    margin-left: 250px; /* Leave space for the sidebar */
+    margin-right: 250px; /* Padding for the content */
+    background-color: #8A6E29; /* Example background color */
+    position: fixed;
+    top: 5%; /* Align with the sidebar’s top */
+    left: 20px; /* Align with the sidebar’s left */
+    right:20px;
+    height: 90vh; /* Full height */
+    border-radius: 10px; /* Add rounded corners */
+    font-family: 'Inter', sans-serif;
+}
+.sidebarContainer {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #8A6E29; /* Optional: Add background to match content */
+}
